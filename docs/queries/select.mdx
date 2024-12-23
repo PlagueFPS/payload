@@ -139,7 +139,7 @@ export const Pages: CollectionConfig<'pages'> = {
 
 <Banner type="warning">
   <strong>Important:</strong>
-  When using `defaultPopulate` on collections with a [Upload](/docs/fields/upload) field, it is important to specify `filename: true` and `url: true`, otherwise Payload will not be able to fetch the correct image URL and populate the URL field in your queries, instead returning `url: null`.
+  When using `defaultPopulate` on collections with [Uploads](/docs/fields/upload) enabled, it is important to specify `filename: true` and `url: true`, otherwise Payload will not be able to fetch the image URL and populate the URL field in queries, instead returning `url: null`.
 </Banner>
 
 ## populate
