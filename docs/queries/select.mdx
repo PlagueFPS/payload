@@ -137,6 +137,11 @@ export const Pages: CollectionConfig<'pages'> = {
 }
 ```
 
+<Banner type="warning">
+  <strong>Important:</strong>
+  When setting `defaultPopulate` on [Uploads](/docs/fields/upload) you must specify `filename: true` since Payload uses the filename to fetch the image from the API. Without this, Payload won't be able to populate the `url` of your upload and it will return `null` instead.
+</Banner>
+
 ## populate
 
 Setting `defaultPopulate` will enforce that each time Payload performs a "population" of a related document, only the fields specified will be queried and returned. However, you can override `defaultPopulate` with the `populate` property in the Local and REST API:
